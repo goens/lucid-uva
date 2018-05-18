@@ -1,0 +1,41 @@
+%!TEX program = xelatex
+\documentclass{beamer}
+
+\logo{\includegraphics[height=0.8cm]{logo.png}\vspace{239pt}}
+
+\usetheme{mhthm}
+
+\title{Title}
+\subtitle{Very long subtitle}
+\author{Author(s)}
+\institute{Institute}
+
+
+\date{date}
+
+\setcounter{showSlideNumbers}{1}
+
+\begin{document}
+	\setcounter{showProgressBar}{0}
+	\setcounter{showSlideNumbers}{0}
+
+	\frame{\titlepage}
+
+	\begin{frame}
+		\frametitle{Contents}
+		\begin{enumerate}
+			\item One
+			\item Two
+			\item Three
+		\end{enumerate}
+	\end{frame}
+
+	\setcounter{framenumber}{0}
+	\setcounter{showProgressBar}{1}
+	\setcounter{showSlideNumbers}{1}
+	\section{Section}
+	\begin{frame}
+		\frametitle{A frame}
+		content...
+	\end{frame}
+\end{document}

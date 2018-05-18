@@ -20,7 +20,8 @@
 \definecolor{ProgBarFGColor}{RGB}{43,79,159} % progress bar
 \definecolor{ItemEnumColor}{RGB}{231,43,45} % bulleted lists
 \definecolor{CoverTextColor}{RGB}{43,79,159} % text of the bottom part of the cover
-\definecolor{DetailsColor}{RGB}{43,79,159} % bottom info (date, section, slide number)
+\definecolor{DetailsColor}{RGB}{43,79,159} % bottom info (date, section, slide number) 
+\definecolor{LinksColor}{RGB}{231,43,45}
 
 
 % set colours
@@ -29,11 +30,27 @@
 \setbeamercolor{enumerate item}{fg=ItemEnumColor}
 \setbeamercolor{alerted text}{fg=TitlesBGColor}
 \setbeamercolor{section in toc}{fg=TitlesBGColor}
+\hypersetup{colorlinks,linkcolor=,urlcolor=LinksColor}
 
 % set fonts
 \setbeamerfont{itemize/enumerate body}{size=\large}
 \setbeamerfont{itemize/enumerate subbody}{size=\normalsize}
 \setbeamerfont{itemize/enumerate subsubbody}{size=\small}
+
+% -------- COOL MACROS --------
+\def\code#1{\texttt{#1}}
+
+\def\image[#1][#2]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[#2]{#1}
+\end{figure}}
+
+\def\boximage[#1][#2]{
+	\begin{figure}[H]
+		\centering
+		\fbox{\includegraphics[#2]{#1}}
+\end{figure}}
 
 \ifbeamer@pixelitem
 % make the itemize bullets pixelated >
@@ -143,7 +160,7 @@
 			% draw the actual text
 			\node[anchor=south,text width=\slidewidth-1cm,inner xsep=0.5cm] at (0.5\slidewidth,4cm) {\color{TitlesColor}\Huge\textbf{\inserttitle}};
 			\node[anchor=north east,text width=\slidewidth-1cm,align=right] at (\slidewidth-0.4cm,4cm) {\color{CoverTextColor}\tiny\insertsubtitle};
-			\node[above] at(0.5\slidewidth,2.3cm) {\color{CoverTextColor}\tiny a cura di};
+			\node[above] at(0.5\slidewidth,2.3cm) {\color{CoverTextColor}\tiny by};
 			\node at (0.5\slidewidth,2cm) {\color{CoverTextColor}\LARGE\insertauthor};
 
 			% add the date in the corner

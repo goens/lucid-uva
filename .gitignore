@@ -87,3 +87,8 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
+
+# useless files
+color_scheme.png
+identicon.png
+presentation.pdf

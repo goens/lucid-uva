@@ -1,0 +1,80 @@
+%!TEX program = xelatex
+\documentclass{beamer}
+
+\logo{\includegraphics[height=0.8cm]{logo.png}\vspace{239pt}}
+
+\usetheme{mhthm}
+
+\title{How to use mhthm}
+\subtitle{A customizable and modern Beamer theme for LaTeX presentations}
+\author{Arianna Masciolini}
+\institute{UniPG}
+
+
+\date{May 2018}
+
+\setcounter{showSlideNumbers}{1}
+
+\begin{document}
+	\setcounter{showProgressBar}{0}
+	\setcounter{showSlideNumbers}{0}
+
+	\frame{\titlepage}
+
+	\begin{frame}
+		\frametitle{Contents}
+		\begin{enumerate}
+			\item Introduction \\ {\footnotesize\hspace{1em} What is mhthm? How to use it?}
+			\item Customization \\ {\footnotesize\hspace{1em} How to change logo and choose another color scheme}
+			\item Images \\ {\footnotesize\hspace{1em} Two ways to add images quickly}
+			\item Code \\ {\footnotesize\hspace{1em} How to write code snippets}
+		\end{enumerate}
+	\end{frame}
+
+	\setcounter{framenumber}{0}
+	\setcounter{showProgressBar}{1}
+	\setcounter{showSlideNumbers}{1}
+	\section{Introduction}
+	\begin{frame}
+		\frametitle{What is mhthm?}
+		This is a customizable and modern Beamer theme for LaTeX presentations I decided to make as I couldn't find one both functional and aesthetically pleasing. It is forked from \href{https://github.com/FuzzyWuzzie/Beamer-Theme-Execushares}{Beamer-Theme-Execushares}, so check that out, too, and feel free to fork mhthm as well.
+		The default color scheme and logo are meant to be used for presentations at uniPG.
+	\end{frame}
+	\begin{frame}
+		\frametitle{Steps}
+		How to write a mhthm presentation:
+		\begin{enumerate}
+			\item Install LaTeX + the Beamer package
+			\item Clone this repo
+			\item Customize the theme (if needed)
+			\item Write your LaTeX code inside \code{presentation.tex}
+			\item Compile!
+		\end{enumerate}
+	\end{frame}
+	\section{Customization}
+	\begin{frame}
+		\frametitle{Logo}
+		In order to use another logo:
+		\begin{enumerate}
+			\item Replace the \code{logo.png} file
+			\item Edit \code{height} at line 4 in your presentation file in order to fit it in the title bars
+		\end{enumerate}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Color scheme}
+		Look for the default color scheme in your \code{beamerthememhthm.sty} file and edit the RGB values and/or define other colors. It should look like this:
+		\image[color_scheme.png][scale=0.30]
+		You can also use the colors defined there wherever in your presentation file, like I'm doing \textcolor{ProgBarBGColor}{right now}.
+	\end{frame}
+	\section{Images}
+	\begin{frame}
+		\frametitle{Add images}
+			The mhthm theme provides a quick way to add images. Just use \\ \hspace{1em} \code{\textbackslash image[name.ext][scale=0.x]} \\ or \\ \hspace{1em} \code{\textbackslash boximage[name.ext][scale=0.x]} \\ to surround it with a box, like this:
+			\boximage[identicon.png][scale=0.2]
+	\end{frame}
+	\section{Code}
+	\begin{frame}
+		As a CS student, I often need to display code in my presentations. 
+		Code snippets with syntax highlighting are supported in LaTeX, and I'm looking for a cool way to make them easy to write in my theme. So, this is currently under development. If you have any ideas or tips, they're very welcome. As for now, to write monospaced things you can use \code{\textbackslash code\{your code\}}.
+	\end{frame}
+\end{document}
