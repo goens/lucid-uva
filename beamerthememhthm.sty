@@ -13,13 +13,15 @@
 % -------- COLOR SCHEME --------
 % define colours (DEFAULT: uniPG theme)
 \definecolor{TitlesColor}{RGB}{255,255,255}
-\definecolor{TitlesBGColor}{RGB}{43,79,159}
+\definecolor{TitlesBGColor}{RGB}{43,79,159} % titles bar color 
 \definecolor{TextColor}{RGB}{0,0,0}
 \definecolor{BackgroundColor}{RGB}{255,255,255}
-\definecolor{ProgBarBGColor}{RGB}{255,255,255}
-\definecolor{ProgBarFGColor}{RGB}{43,79,159}
-\definecolor{ItemEnumColor}{RGB}{231,43,45}
-\definecolor{CoverTextColor}{RGB}{33,60,122}
+\definecolor{ProgBarBGColor}{RGB}{175,175,175} % progress bar background
+\definecolor{ProgBarFGColor}{RGB}{43,79,159} % progress bar
+\definecolor{ItemEnumColor}{RGB}{231,43,45} % bulleted lists
+\definecolor{CoverTextColor}{RGB}{43,79,159} % text of the bottom part of the cover
+\definecolor{DetailsColor}{RGB}{43,79,159} % bottom info (date, section, slide number)
+
 
 % set colours
 \setbeamercolor{normal text}{fg=TextColor}\usebeamercolor*{normal text}
@@ -145,7 +147,7 @@
 			\node at (0.5\slidewidth,2cm) {\color{CoverTextColor}\LARGE\insertauthor};
 
 			% add the date in the corner
-			\node[anchor=south east] at(\slidewidth,0cm) {\color{TextColor}\tiny\insertdate};
+			\node[anchor=south east] at(\slidewidth,0cm) {\color{DetailsColor}\tiny\insertdate};
 		\else
 			% NOT the title page
 			% title bar
@@ -163,16 +165,16 @@
 				\draw[fill=ProgBarFGColor,draw=none] (0cm,0cm) rectangle(\progressbar@tmpdim,0.25cm);
 
 				% bottom information
-				\node[anchor=south west] at(0cm,0.25cm) {\color{TextColor}\tiny\vphantom{lp}\insertsection};
+				\node[anchor=south west] at(0cm,0.25cm) {\color{DetailsColor}\tiny\vphantom{lp}\insertsection};
 				% if slide numbers are active
 				\ifnum \value{showSlideNumbers}>0\relax%
 					% if slide totals are active
 					\ifnum \value{showSlideTotal}>0\relax%
 						% draw both slide number and slide total
-						\node[anchor=south east] at(\slidewidth,0.25cm) {\color{TextColor}\tiny\insertframenumber/\inserttotalframenumber};
+						\node[anchor=south east] at(\slidewidth,0.25cm) {\color{DetailsColor}\tiny\insertframenumber/\inserttotalframenumber};
 					\else
 						% slide totals aren't active, don't draw them
-						\node[anchor=south east] at(\slidewidth,0.25cm) {\color{TextColor}\tiny\insertframenumber};
+						\node[anchor=south east] at(\slidewidth,0.25cm) {\color{DetailsColor}\tiny\insertframenumber};
 					\fi
 				\fi
 			% don't show the progress bar?
