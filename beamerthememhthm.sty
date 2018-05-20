@@ -197,16 +197,16 @@
 			% don't show the progress bar?
 			\else
 				% section title in the bottom left
-				\node[anchor=south west] at(0cm,0cm) {\color{TitlesColor}\tiny\vphantom{lp}\insertsection};
+				\node[anchor=south west] at(0cm,0cm) {\color{DetailsColor}\tiny\vphantom{lp}\insertsection};
 				% if we're showing slide numbers
 				\ifnum \value{showSlideNumbers}>0\relax%
 					% if slide totals are active
 					\ifnum \value{showSlideTotal}>0\relax%
 						% draw both slide number and slide total
-						\node[anchor=south east] at(\slidewidth,0cm) {\color{TextColor}\tiny\insertframenumber/\inserttotalframenumber};
+						\node[anchor=south east] at(\slidewidth,0cm) {\color{DetailsColor}\tiny\insertframenumber/\inserttotalframenumber};
 					\else
 						% slide totals aren't active, don't draw them
-						\node[anchor=south east] at(\slidewidth,0cm) {\color{TextColor}\tiny\insertframenumber};
+						\node[anchor=south east] at(\slidewidth,0cm) {\color{DetailsColor}\tiny\insertframenumber};
 					\fi
 				\fi
 			\fi
