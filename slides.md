@@ -3,7 +3,7 @@ title: "The title"
 subtitle: "and a possibly very long subtitle"
 author: "the author"
 theme: "mhthm"
-#logo: "gu.png"
+logo: "gu.png"
 date: "the date"
 ---
 

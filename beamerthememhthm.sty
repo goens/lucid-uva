@@ -45,6 +45,9 @@
 % disable navigation
 \setbeamertemplate{navigation symbols}{}
 
+% disable the damn default logo!
+\setbeamertemplate{sidebar right}{}
+
 % custom draw the title page above
 \setbeamertemplate{title page}{}
 
@@ -114,8 +117,8 @@
 			% slide title
 			\node[anchor=north,text width=\slidewidth-0.75cm,inner xsep=0.5cm,inner ysep=0.25cm] at (0.5\slidewidth,\slideheight) {\color{BackgroundColor}\huge\textbf{\insertframetitle}};
 
-			% logo (TODO: autoscale; now it only works with GU)
-			\node[anchor=north east, scale=0.19] at (\slidewidth-0.25cm,\slideheight){\insertlogo};
+			% logo (TODO: autoscale; now it expects 350x350
+			\node[anchor=north east] at (\slidewidth-0.25cm,\slideheight+0.06cm){\insertlogo};
 
 			% show progress bar
 			\ifnum \value{showProgressBar}>0\relax%
