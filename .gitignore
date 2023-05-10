@@ -91,5 +91,4 @@ sympy-plots-for-*.tex/
 # useless files
 color_scheme.png
 identicon.png
-presentation.pdf
-how-to.tex
+._wordcount_selection.tex
