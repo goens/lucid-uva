@@ -58,6 +58,16 @@
 \setbeamertemplate{caption}{\tiny\insertcaption}
 \setbeamertemplate{caption label separator}{}
 
+\setbeamertemplate{footnote}{ 
+	\parindent 0em
+	\noindent 
+	\raggedright 
+	\hbox to 0.8em{\hfil\insertfootnotemark}
+	\insertfootnotetext
+	\par
+	\vspace{2em}
+}
+
 % progress bar counters
 \newcounter{showProgressBar}
 \setcounter{showProgressBar}{1}

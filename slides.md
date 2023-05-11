@@ -12,6 +12,14 @@ date: "the date"
 ## The first slide
 With just some text in it.
 
+## The second slide
+A first, multiline paragraph with some random words and even a correctly placed footnote[^1]. 
+Can you believe that? Because honestly I thought automatically placing footnotes was very hard.
+
+And a second paragraph here.
+
+[^1]: ...And this is the footnote.
+
 ## Some bullet points
 - one
 - two
