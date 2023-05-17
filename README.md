@@ -20,10 +20,11 @@ I usually just write regular Markdown using `#` for each new section and `##` fo
 ---
 title: "The title"
 subtitle: "a possibly very long subtitle" # OPTIONAL
-author: "My Name"
+author: "My Name" # OPTIONAL
 theme: "mhthm"
 logo: "gu.png" # OPTIONAL - if present, it should as of now be the path to a 300x300 image
 date: "the date" # OPTIONAL - will appear on the title page on the bottom right
+institute: "Språkbanken Text, University of Gothenburg" # OPTIONAL
 ---
 ```
 

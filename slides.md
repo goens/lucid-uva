@@ -1,10 +1,11 @@
 ---
 title: "The title"
 subtitle: "and a possibly very long subtitle"
-author: "the author"
+author: "The Author"
 theme: "lucid"
 logo: "gu.png"
 date: "the date"
+institute: "The Institution"
 ---
 
 # The first section
