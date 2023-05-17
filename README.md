@@ -2,7 +2,7 @@
 A modern Beamer theme you can use without installing dozens of CTAN packages.
 
 I really, really hate all PowerPoint-like programs but also dislike most Beamer templates, so back in my third year of university I invested one night in making my own.
-I didn't understand anything about CTAN packages, `.sty` files and `tikz` (and to a large extent I still don't), but [Beamer-Theme-Execushares](https://github.com/hamaluik/Beamer-Theme-Execushares) provided an excellent starting point and the resulting theme served me well throughout the last 5 years - I only recently switched to my current institution's colors and logo and fixed a few things that kept annoying me. 
+I didn't understand anything about CTAN packages, `.sty` files and `tikz` (and to a large extent I still don't), but [Beamer-Theme-Execushares](https://github.com/hamaluik/Beamer-Theme-Execushares) provided an excellent starting point and the resulting theme served me well throughout the last 5 years - I only recently switched to my current institution's (Språkbanken Text, University of Gothenburg) colors and logo and fixed a few things that kept annoying me. 
 There are still a few [issues](https://github.com/harisont/Beamer-mhthm/issues) I'd like to address, but because I find writing style files to be a nightmare PRs are more than ever welcome.  
 
 ## Usage
