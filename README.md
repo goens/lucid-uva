@@ -42,4 +42,4 @@ For further information about the pandoc + beamer combo, I think [alexeygumirov]
 
 ## Namesake
 In Italian, _lucidi_ is the word that indicates slides meant for old-fashioned overhead projectors.
-Not to mention that having a quick and simple way to generate acceptable-looking slides greatly helps me focussing on the content of my presentation and expressing myself lucidly.
+Not to mention that having a quick and simple way to generate acceptable-looking slides greatly helps me _mantenere la luciditá_ (stay sane).
