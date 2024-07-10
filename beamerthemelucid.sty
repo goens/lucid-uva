@@ -2,9 +2,9 @@
 \usetikzlibrary{calc}
 
 % -------- COLOR SCHEME --------
-\definecolor{PrimaryColor}{RGB}{7,79,140} % primary color (blue)
-\definecolor{SecondaryColor}{RGB}{242,88,26} % bulleted lists
-\definecolor{BackgroundColor}{RGB}{255,255,255} % background & titles (white)
+\definecolor{PrimaryColor}{RGB}{189,0,50} % primary color (red)
+\definecolor{SecondaryColor}{RGB}{189,0,50} % bulleted lists
+\definecolor{BackgroundColor}{RGB}{245,245,245} % background & titles (light grey)
 \definecolor{TextColor}{RGB}{0,0,0} % text (black)
 \definecolor{ProgBarBGColor}{RGB}{175,175,175} % progress bar background (grey)
 
@@ -60,17 +60,17 @@
 %\setbeamertemplate{caption label separator}{}
 
 % add some space below the footnotes so they don't end up on the progress bar
-\setbeamertemplate{footnote}{ 
+\setbeamertemplate{footnote}{
 	\parindent 0em
-	\noindent 
-	\raggedright 
+	\noindent
+	\raggedright
 	\hbox to 0.8em{\hfil\insertfootnotemark}
 	\insertfootnotetext
 	\par
 	\vspace{2em}
 }
 
-% add the same vspace both before and after quotes 
+% add the same vspace both before and after quotes
 \setbeamertemplate{quote begin}{\vspace{0.5em}}
 \setbeamertemplate{quote end}{\vspace{0.5em}}
 
@@ -135,7 +135,7 @@
 			\node[anchor=north,text width=\slidewidth-0.75cm,inner xsep=0.5cm,inner ysep=0.25cm] at (0.5\slidewidth,\slideheight) {\color{BackgroundColor}\huge\textbf{\insertframetitle}};
 
 			% logo (TODO: autoscale; now it expects 350x350
-			\node[anchor=north east] at (\slidewidth-0.25cm,\slideheight+0.06cm){\insertlogo};
+			\node[anchor=north east] at (\slidewidth-0.25cm,\slideheight+0.06cm){\includegraphics[width=0.08\slidewidth,height=0.08\slideheight]{uva.png}};
 
 			% show progress bar
 			\ifnum \value{showProgressBar}>0\relax%

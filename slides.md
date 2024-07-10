@@ -3,7 +3,6 @@ title: "The title"
 subtitle: "and a possibly very long subtitle"
 author: "The Author"
 theme: "lucid"
-logo: "gu.png"
 date: "the date"
 institute: "The Institution"
 ---
@@ -27,7 +26,7 @@ And a second, shorter paragraph here.
     - one
     - two
     - three
-  - two 
+  - two
   - three
 - three
 
@@ -64,7 +63,7 @@ And a closing comment.
 
 ## Some code
 
-A syntax-highlighted code example: 
+A syntax-highlighted code example:
 
 ```haskell
 haskellExample :: From -> To
